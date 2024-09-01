@@ -26,9 +26,6 @@ export default defineConfig(() => {
       reportCompressedSize: true,
       target: ['es2020'],
     },
-    ssr: {
-      noExternal: ['mermaid'],
-    },
     plugins: [
       analog({
         vite: {
@@ -73,7 +70,6 @@ export default defineConfig(() => {
           },
         },
         nitro: {
-          minify: true,
           prerender: {
             failOnError: true,
           },
