@@ -13,12 +13,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
     provideClientHydration(),
-    provideContent(
-      withMarkdownRenderer({
-        loadMermaid: () => import('mermaid'),
-      }),
-      withShikiHighlighter()
-    ),
+    provideContent(withMarkdownRenderer(), withShikiHighlighter()),
     provideFileRouter(
       withInMemoryScrolling({ anchorScrolling: 'enabled' }),
       withEnabledBlockingInitialNavigation()
