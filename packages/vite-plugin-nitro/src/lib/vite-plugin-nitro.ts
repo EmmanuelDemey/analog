@@ -251,7 +251,7 @@ export function nitro(options?: Options, nitroOptions?: NitroConfig): Plugin[] {
             nitroConfig = {
               ...nitroConfig,
               externals: {
-                external: ['rxjs', 'node-fetch-native/dist/polyfill', 'uuid'],
+                external: ['rxjs', 'node-fetch-native/dist/polyfill'],
               },
               moduleSideEffects: ['zone.js/node', 'zone.js/fesm2015/zone-node'],
               handlers: [
