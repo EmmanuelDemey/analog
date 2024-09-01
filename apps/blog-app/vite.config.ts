@@ -73,6 +73,7 @@ export default defineConfig(() => {
           },
         },
         nitro: {
+          minify: true,
           prerender: {
             failOnError: true,
           },
